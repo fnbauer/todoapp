@@ -7,7 +7,7 @@
   </tr>
   <% @todos.each do |td| %>
   <tr>
-    <td><%= link_to td.name, todo_path(td) %></td>
+    <td><%= link_to td.name, todo_path(td) %></td> <!-- link to takes name and path, use rails routes to see path -->
     <td><%= link_to td.description, edit_todo_path(td) %></td>
   </tr>
     <% end %>
