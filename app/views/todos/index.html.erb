@@ -7,10 +7,8 @@
   </tr>
   <% @todos.each do |td| %>
   <tr>
-    <td><%= td.name %></td>
-    <td>:<%= td.description %></td>
-    <td><%= link_to td.name, edit_todo_path(td) %></td>
-    <td><%= link_to "Show", todo_path(td) %></td>
+    <td><%= link_to td.name, todo_path(td) %></td>
+    <td><%= link_to td.description, edit_todo_path(td) %></td>
   </tr>
     <% end %>
 </table>
