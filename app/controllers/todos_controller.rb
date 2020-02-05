@@ -31,6 +31,11 @@ def update
   end
 end
 
+def index
+  @todos = Todo.all
+end
+
+
 private
 def todo_params #parameter validation
   params.require(:todo).permit(:name, :description)
