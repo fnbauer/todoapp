@@ -35,6 +35,13 @@ def index
   @todos = Todo.all
 end
 
+def destroy
+  @todo=Todo.find(params[:id])
+  @todo.destroy
+  flash[:notice] = "Todo was deleted sucesfully"
+  redirect_to todos_path
+end
+
 
 private
 def todo_params #parameter validation
