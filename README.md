@@ -22,3 +22,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+- MVC
+- Model, View, Controller
+Start the server
